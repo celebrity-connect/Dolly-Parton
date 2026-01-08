@@ -223,7 +223,7 @@ footer a {
   <div class="modal-content">
     <h2>Subscribed Successfully! 🦋</h2>
     <p>Thank you for joining Dolly's Substack, sugar! We're so glad you're here.</p>
-    <p>While you're hear, please send a heartfelt message to Dolly Parton</p>
+    <p>While you're here, please send a heartfelt message to Dolly Parton</p>
     <button class="send-message-btn" id="send-message-btn">Send Message to Dolly Parton</button>
     <div class="close-modal" onclick="document.getElementById('success-modal').style.display='none'">
       Close
@@ -252,9 +252,9 @@ subscribeBtn.addEventListener('click', function () {
 });
 
 sendMessageBtn.addEventListener('click', function () {
-  const subject = encodeURIComponent('A Heartfelt Message from a Fan');
+  const subject = encodeURIComponent('');
   const body = encodeURIComponent(
-    'Dear Dolly,\n\nI just subscribed to your Substack and wanted to tell you how much your music and stories mean to me...\n\nWith love,\n[Your Name]'
+    ''
   );
   window.location.href = `mailto:official.dolly.parton@outlook.com?subject=${subject}&body=${body}`;
 });
